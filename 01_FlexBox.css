@@ -1,0 +1,33 @@
+.father {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  /* align-content: center; */
+}
+
+.child {
+  background-color: cadetblue;
+  font-size: 100px;
+
+  flex-basis: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child:nth-child(2) {
+  background-color: brown;
+  align-self: flex-start;
+  flex-shrink: 2;
+  /* flex-grow: 1; */
+}
+
+.child:nth-child(3) {
+  order: -1;
+}

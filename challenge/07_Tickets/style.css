@@ -1,0 +1,120 @@
+/* 크기의 단위는 px대신 vw를 이용하자 */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template:
+    "header header header header" 0.1fr
+    "box1 box2 box3 box4" 1fr
+    "box5 box6 box3 box4" 1fr
+    "box5 box7 box3 box4" 1fr / 1fr 1fr 1fr 1fr;
+}
+
+h2 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin: 1vw;
+}
+
+h3 {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  margin-bottom: 0.3vw;
+}
+h4 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  margin-bottom: 0.5vw;
+}
+
+header {
+  background-color: gainsboro;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1vw;
+  padding-right: 37vw;
+}
+
+.status1 {
+  width: 4vw;
+  height: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status2 {
+  width: 1vw;
+  height: 1vw;
+  border: 0.1vw solid gray;
+  border-radius: 50%;
+}
+
+.search {
+  width: 25vw;
+  height: 1vw;
+  border: 0.1vw solid gray;
+  border-radius: 0.5vw;
+}
+
+.box1 {
+  background-color: black;
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+  padding: 1vw;
+  grid-area: box1;
+}
+
+.box1_1 {
+  display: flex;
+  align-items: center;
+}
+.rotate180 {
+  height: 3.7vw;
+  transform: rotate(180deg);
+  display: flex;
+}
+
+.box1_3 {
+  width: 13.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2 {
+  background-color: blueviolet;
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+  padding: 1vw;
+}
+
+.box4 {
+  grid-area: box4;
+  padding: 1vw;
+}
+
+.box5 {
+  background-color: orangered;
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  background-color: orange;
+  grid-area: box7;
+}

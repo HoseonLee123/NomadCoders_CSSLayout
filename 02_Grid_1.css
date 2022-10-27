@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 50vh;
+  gap: 10px;
+  /* grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer ."; */
+}
+
+.header {
+  background-color: green;
+  grid-column: 1 / 5;
+  /* grid-area: header; */
+}
+
+.content {
+  background-color: blueviolet;
+  grid-column: 1 / -2;
+  grid-row: span 2;
+  /* grid-area: content; */
+}
+
+.nav {
+  background-color: tomato;
+  grid-row: span 2;
+  /* grid-area: nav; */
+}
+
+.footer {
+  background-color: yellow;
+  grid-column: span 4;
+  /* grid-area: footer; */
+}

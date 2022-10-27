@@ -1,0 +1,23 @@
+.grid1,
+.grid2 {
+  display: grid;
+  grid-auto-rows: 100px;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: aquamarine;
+}
+
+.item:nth-child(even) {
+  background-color: cornflowerblue;
+}
+
+.grid1 {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid2 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

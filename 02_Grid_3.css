@@ -1,0 +1,38 @@
+.grid {
+  background-color: black;
+
+  display: grid;
+  height: 50vh;
+  gap: 10px;
+
+  grid-template:
+    "header header header header" 100px
+    "content content content nav" 100px
+    "footer footer footer footer" 100px / 100px 100px 100px 100px;
+
+  justify-content: center;
+  align-content: center;
+  /* place-content: center center; */
+}
+
+.header {
+  background-color: green;
+  grid-area: header;
+  justify-self: center;
+  align-self: end;
+}
+
+.content {
+  background-color: blueviolet;
+  grid-area: content;
+}
+
+.nav {
+  background-color: tomato;
+  grid-area: nav;
+}
+
+.footer {
+  background-color: yellow;
+  grid-area: footer;
+}
